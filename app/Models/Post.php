@@ -11,7 +11,7 @@ class Post extends Model
    
     public function getPaginateByLimit(int $limit_count = 10)
     {
-        return $this->orderby('updated_at','DESC')->limit($limit_count)->get();
+        return $this->orderby('updated_at','DESC')->paginate($limit_count);
        // return $this->orderby('updated_at','DESC')->paginate($limit_count);
     }
 }
