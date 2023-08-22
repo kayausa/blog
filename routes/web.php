@@ -14,11 +14,11 @@ use App\Http\Controllers\PostController;
 |
 */
 
-/*Route::get('/', function () {
-    return view('posts.index');
-});*/
-/*Route::get('/', function () {
-    return view('welcome');
-});
-*/
+
+
 Route::get('/posts',[PostController::class, 'index']);
+
+    return view('posts.index');
+});
+
+
