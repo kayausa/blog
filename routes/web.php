@@ -16,9 +16,9 @@ use App\Http\Controllers\PostController;
 
 
 
-Route::get('/posts',[PostController::class, 'index']);
+//Route::get('/posts',[PostController::class, 'index']);
+Route::get('/',[PostController::class, 'index']);
+  //  return view('posts.index');
+//});
 
-    return view('posts.index');
-});
-
-
+Route::get('/posts/{post}',[PostController::class,'show']);
