@@ -25,6 +25,7 @@
                     @method('DELETE')
                     <button type="button" onclick="deletePost({{$post->id}})">delete</button>
                 </form>    
+                  <a href="https://teratail.com/questions/{{$question['id']}}">{{$question['title']}}</a>
                 
                 </div>
                 
